@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff5f5f5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.gooddoctor.view.PtrAnimationFrameLayout android:id="@+id/ptr_layout" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" cube_ptr:ptr_duration_to_close_header="500" cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2" cube_ptr:ptr_resistance="1.7">
+        <!--<android.support.v7.widget.RecyclerView android:id="@+id/main_recycler" android:layout_width="fill_parent" android:layout_height="wrap_content" />-->
+        <com.google.gooddoctor.view.SpringScrollView android:id="@+id/sv_mine" android:focusable="true" android:focusableInTouchMode="true" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="false" android:overScrollMode="never">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/main_medical_bg"/>
+                    <ImageView
+                        android:id="@+id/img_top_ad"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:layout_gravity="center"
+                        android:src="@drawable/main_top_ad"
+                        android:layout_marginTop="6dp"/>
+                </FrameLayout>
+                <com.google.gooddoctor.view.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="4dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardShadowColorEnd="#f5f5f5"
+                    app:cardShadowColorStart="#19858585"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="4dp">
+                        <LinearLayout
+                            android:id="@+id/layout_kswz"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="108dp"
+                                android:layout_height="119dp"
+                                android:src="@drawable/pic_kswz"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/layout_zmy"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center" >
+
+                            <ImageView
+                                android:layout_width="108dp"
+                                android:layout_height="119dp"
+                                android:src="@drawable/pic_zmy"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/layout_xfky"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center" >
+
+                            <ImageView
+                                android:layout_width="108dp"
+                                android:layout_height="119dp"
+                                android:src="@drawable/pic_xfky"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.gooddoctor.view.CardView>
+
+                <com.google.gooddoctor.view.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="4dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardShadowColorEnd="#f5f5f5"
+                    app:cardShadowColorStart="#19858585"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp">
+                            <TextView
+                                android:id="@+id/tv_zkmz"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="专科门诊"
+                                android:textSize="18dp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="三甲专家2分钟接诊"
+                                android:textSize="14dp"
+                                android:textColor="@color/text_color_third"
+                                android:layout_marginLeft="6dp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="2dp">
+                            <LinearLayout
+                                android:id="@+id/layout_pfk"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="69dp"
+                                    android:layout_height="82dp"
+                                    android:src="@drawable/pic_pfk"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/layout_fck"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="69dp"
+                                    android:layout_height="82dp"
+                                    android:src="@drawable/pic_fck"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/layout_ek"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="69dp"
+                                    android:layout_height="82dp"
+                                    android:src="@drawable/pic_ek"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/layout_pnk"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center" >
+
+                                <ImageView
+                                    android:layout_width="69dp"
+                                    android:layout_height="82dp"
+                                    android:src="@drawable/pic_pnk"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/layout_pwk"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center" >
+
+                                <ImageView
+                                    android:layout_width="69dp"
+                                    android:layout_height="82dp"
+                                    android:src="@drawable/pic_pwk"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="6dp">
+                            <LinearLayout
+                                android:id="@+id/layout_zyk"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="69dp"
+                                    android:layout_height="82dp"
+                                    android:src="@drawable/pic_zyk"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/layout_xhnk"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center" >
+
+                                <ImageView
+                                    android:layout_width="69dp"
+                                    android:layout_height="82dp"
+                                    android:src="@drawable/pic_xhnk"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/layout_gk"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="69dp"
+                                    android:layout_height="82dp"
+                                    android:src="@drawable/pic_gk"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/layout_mnwk"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="69dp"
+                                    android:layout_height="82dp"
+                                    android:src="@drawable/pic_mnwk"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/layout_zkmz_more"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center" >
+
+                                <ImageView
+                                    android:layout_width="69dp"
+                                    android:layout_height="82dp"
+                                    android:src="@drawable/pic_more"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.gooddoctor.view.CardView>
+
+                <com.google.gooddoctor.view.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="4dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardShadowColorEnd="#f5f5f5"
+                    app:cardShadowColorStart="#19858585"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_marginBottom="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp">
+                            <TextView
+                                android:id="@+id/tv_zyg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="中医馆"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="共有74432名用户体质明显改善提高"
+                                android:textSize="14dp"
+                                android:textColor="@color/text_color_third"
+                                android:layout_marginLeft="6dp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="6dp">
+
+                            <LinearLayout
+                                android:id="@+id/ll_jkys"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="164dp"
+                                    android:layout_height="98dp"
+                                    android:layout_marginLeft="6dp"
+                                    android:src="@drawable/pic_jkys" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_rmmf"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center" >
+
+                                <ImageView
+                                    android:layout_width="164dp"
+                                    android:layout_height="98dp"
+                                    android:layout_marginRight="6dp"
+                                    android:src="@drawable/pic_rmmf"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="6dp">
+                            <LinearLayout
+                                android:id="@+id/ll_wang"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="86dp"
+                                    android:layout_height="114dp"
+                                    android:src="@drawable/pic_wang"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/ll_wenn"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="86dp"
+                                    android:layout_height="114dp"
+                                    android:src="@drawable/pic_wenn"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/ll_wen"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="86dp"
+                                    android:layout_height="114dp"
+                                    android:src="@drawable/pic_wen"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/ll_qie"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center" >
+
+                                <ImageView
+                                    android:layout_width="86dp"
+                                    android:layout_height="114dp"
+                                    android:src="@drawable/pic_qie"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.gooddoctor.view.CardView>
+            </LinearLayout>
+        </com.google.gooddoctor.view.SpringScrollView>
+    </com.google.gooddoctor.view.PtrAnimationFrameLayout>
+</RelativeLayout>

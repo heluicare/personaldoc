@@ -1,0 +1,9 @@
+package com.google.gooddoctor.adapter;
+
+public enum MineType {
+    ITEM_TYPE_TEST,
+    ITEM_TYPE_TITLE_CONTENT,
+    ITEM_TYPE_TITLE_CONTENT_NOMORE,
+    ITEM_TYPE_TITLE_CONTENT_NOTITLE,
+    ITEM_TYPE_TITLE_CONTENT_NOTITLE_CUSTOMGROUND
+}

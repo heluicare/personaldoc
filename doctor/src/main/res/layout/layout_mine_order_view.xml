@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+    <RelativeLayout android:background="@drawable/circle_radius_ffffff_tras" android:paddingBottom="15.0dip" android:layout_marginBottom="12dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/rl_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:background="@android:color/transparent" android:paddingLeft="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/my_order_title" />
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_order_list" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="30dp" android:gravity="center_horizontal|bottom" android:layout_alignParentRight="true">
+                <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:layout_gravity="center_horizontal" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_item_order_all_list" android:drawableRight="@drawable/icon_arrow_right_gray" android:drawablePadding="6.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/rl_title">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_shop_cart" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <RelativeLayout android:id="@+id/rl_shop_cart" android:layout_width="40.0dip" android:layout_height="33.0dip">
+                    <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/icon_mine_shop_cart" android:layout_centerInParent="true" />
+                    <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_shop_cart_num" android:padding="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/my_item_shop_cart" android:layout_below="@id/rl_shop_cart" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/rl_order_need_pay" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <RelativeLayout android:id="@+id/rl_need_pay" android:layout_width="40.0dip" android:layout_height="33.0dip">
+                    <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/icon_coinbag" android:layout_centerInParent="true" />
+                    <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_need_pay_num" android:background="@drawable/shape_order_tip" android:padding="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/my_item_order_need_pay" android:layout_below="@id/rl_need_pay" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/rl_order_ongoing" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <RelativeLayout android:id="@+id/rl_ongoing" android:layout_width="40.0dip" android:layout_height="33.0dip">
+                    <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/icon_car" android:layout_centerInParent="true" />
+                    <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_ongoing_num" android:background="@drawable/shape_order_tip" android:padding="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/my_item_order_ongoing" android:layout_below="@id/rl_ongoing" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/rl_order_finish" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <RelativeLayout android:id="@+id/rl_finish" android:layout_width="40.0dip" android:layout_height="33.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_thumb" android:layout_centerInParent="true" />
+                    <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_review_num" android:background="@drawable/shape_order_tip" android:padding="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/my_item_order_review" android:layout_below="@id/rl_finish" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/rl_complain" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="40.0dip" android:layout_height="33.0dip">
+                    <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/icon_refund" android:layout_centerInParent="true" />
+                    <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_complain_num" android:background="@drawable/shape_order_tip" android:padding="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/my_item_order_refund" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout android:background="@drawable/circle_radius_ffffff_tras" android:paddingBottom="15.0dip"  android:layout_marginBottom="12dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/rl_title1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:background="@android:color/transparent" android:paddingLeft="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="医疗服务" />
+            <LinearLayout android:orientation="vertical"  android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_alignParentRight="true">
+                <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:layout_gravity="center_horizontal" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_more" android:drawableRight="@drawable/icon_arrow_right_gray" android:drawablePadding="6.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/rl_title1">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_wdwz" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="40.0dip" android:layout_height="33.0dip">
+                    <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/icon_wenzhen" android:layout_centerInParent="true" />
+                    <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center" android:padding="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="我的问诊" android:layout_below="@id/rl_shop_cart" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_wdys" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="40.0dip" android:layout_height="33.0dip">
+                    <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/icon_doctor" android:layout_centerInParent="true" />
+                    <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center" android:background="@drawable/shape_order_tip" android:padding="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="我的医生" android:layout_below="@id/rl_need_pay" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_wdyy" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="40.0dip" android:layout_height="33.0dip">
+                    <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/icon_yongyao" android:layout_centerInParent="true" />
+                    <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center" android:background="@drawable/shape_order_tip" android:padding="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="我的用药" android:layout_below="@id/rl_ongoing" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_wdtj" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="40.0dip" android:layout_height="33.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_tiyan" android:layout_centerInParent="true" />
+                    <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center" android:background="@drawable/shape_order_tip" android:padding="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="我的体检" android:layout_below="@id/rl_finish" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_wdgh" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="40.0dip" android:layout_height="33.0dip">
+                    <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/icon_guahao" android:layout_centerInParent="true" />
+                    <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center" android:background="@drawable/shape_order_tip" android:padding="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="我的挂号" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout android:background="@drawable/mine_item_bg" android:paddingBottom="15.0dip"  android:layout_marginBottom="12dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_zj100" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="40.0dip" android:layout_height="33.0dip">
+                    <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/icon_zhijiang" android:layout_centerInParent="true" />
+                    <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center" android:padding="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#8D4DBD" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="直降1000元起" android:layout_below="@id/rl_shop_cart" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/color_cccccc" android:ellipsize="end" android:layout_gravity="center_horizontal" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="主会场" android:maxLines="1" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_hongbao" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="40.0dip" android:layout_height="33.0dip">
+                    <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/icon_hongbao" android:layout_centerInParent="true" />
+                    <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center" android:background="@drawable/shape_order_tip" android:padding="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#8D4DBD" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="100万红包" android:layout_below="@id/rl_need_pay" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/color_cccccc" android:ellipsize="end" android:layout_gravity="center_horizontal" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="每日签到" android:maxLines="1" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_jkjd" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="40.0dip" android:layout_height="33.0dip">
+                    <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/icon_jiankang" android:layout_centerInParent="true" />
+                    <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center" android:background="@drawable/shape_order_tip" android:padding="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#8D4DBD" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="健康金半价兑" android:layout_below="@id/rl_ongoing" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/color_cccccc" android:ellipsize="end" android:layout_gravity="center_horizontal" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="限时抢购" android:maxLines="1" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_888hongbao" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="40.0dip" android:layout_height="33.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_hongbao" android:layout_centerInParent="true" />
+                    <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center" android:background="@drawable/shape_order_tip" android:padding="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#8D4DBD" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="888元红包" android:layout_below="@id/rl_finish" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/color_cccccc" android:ellipsize="end" android:layout_gravity="center_horizontal" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="好友协助" android:maxLines="1" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout android:background="@drawable/circle_radius_ffffff_tras" android:paddingBottom="15.0dip" android:layout_marginBottom="12dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/rl_title4" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:background="@android:color/transparent" android:paddingLeft="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="健康服务" />
+            <LinearLayout android:orientation="vertical"  android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_alignParentRight="true">
+                <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:layout_gravity="center_horizontal" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_more" android:drawableRight="@drawable/icon_arrow_right_gray" android:drawablePadding="6.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/rl_title4">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_sjys" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="40.0dip" android:layout_height="33.0dip">
+                    <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/icon_sjys" android:layout_centerInParent="true" />
+                    <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center" android:padding="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="私家医生" android:layout_below="@id/rl_shop_cart" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/color_cccccc" android:ellipsize="end" android:layout_gravity="center_horizontal" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="24h问诊" android:maxLines="1" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_yxl" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="40.0dip" android:layout_height="33.0dip">
+                    <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/icon_yixinli" android:layout_centerInParent="true" />
+                    <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center" android:background="@drawable/shape_order_tip" android:padding="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="爱心理" android:layout_below="@id/rl_need_pay" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/color_cccccc" android:ellipsize="end" android:layout_gravity="center_horizontal" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="辅助信息" android:maxLines="1" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_myzx" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="40.0dip" android:layout_height="33.0dip">
+                    <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/icon_muying" android:layout_centerInParent="true" />
+                    <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center" android:background="@drawable/shape_order_tip" android:padding="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="母婴中心" android:layout_below="@id/rl_ongoing" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/color_cccccc" android:ellipsize="end" android:layout_gravity="center_horizontal" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="辅助信息" android:maxLines="1" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_bbdj" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="40.0dip" android:layout_height="33.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_bubu" android:layout_centerInParent="true" />
+                    <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center" android:background="@drawable/shape_order_tip" android:padding="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="步步夺金" android:layout_below="@id/rl_finish" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/color_cccccc" android:ellipsize="end" android:layout_gravity="center_horizontal" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="辅助信息" android:maxLines="1" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_jksj" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="40.0dip" android:layout_height="33.0dip">
+                    <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/icon_jksj" android:layout_centerInParent="true" />
+                    <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center" android:background="@drawable/shape_order_tip" android:padding="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="健康数据" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/color_cccccc" android:ellipsize="end" android:layout_gravity="center_horizontal" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="辅助信息" android:maxLines="1" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout android:background="@drawable/circle_radius_ffffff_tras" android:paddingBottom="15.0dip"  android:layout_marginBottom="12dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/rl_title3" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:background="@android:color/transparent" android:paddingLeft="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="常用工具" />
+            <LinearLayout android:orientation="vertical"  android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_alignParentRight="true">
+                <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:layout_gravity="center_horizontal" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_more" android:drawableRight="@drawable/icon_arrow_right_gray" android:drawablePadding="6.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/rl_title3">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_xxjl" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="40.0dip" android:layout_height="33.0dip">
+                    <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/icon_xianjing" android:layout_centerInParent="true" />
+                    <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center" android:padding="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="现金奖励" android:layout_below="@id/rl_shop_cart" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/color_cccccc" android:ellipsize="end" android:layout_gravity="center_horizontal" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="极速提现" android:maxLines="1" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_yqyj" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="40.0dip" android:layout_height="33.0dip">
+                    <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/icon_yaoqing" android:layout_centerInParent="true" />
+                    <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center" android:background="@drawable/shape_order_tip" android:padding="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="邀请有奖" android:layout_below="@id/rl_need_pay" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/color_cccccc" android:ellipsize="end" android:layout_gravity="center_horizontal" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="收徒赚金" android:maxLines="1" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_wdsc" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="40.0dip" android:layout_height="33.0dip">
+                    <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/icon_shoucang" android:layout_centerInParent="true" />
+                    <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center" android:background="@drawable/shape_order_tip" android:padding="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="我的收藏" android:layout_below="@id/rl_ongoing" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/color_cccccc" android:ellipsize="end" android:layout_gravity="center_horizontal" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="辅助信息" android:maxLines="1" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_wdzb" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="40.0dip" android:layout_height="33.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_zhibo" android:layout_centerInParent="true" />
+                    <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center" android:background="@drawable/shape_order_tip" android:padding="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="我的直播" android:layout_below="@id/rl_finish" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/color_cccccc" android:ellipsize="end" android:layout_gravity="center_horizontal" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="辅助信息" android:maxLines="1" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_fkzx" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="40.0dip" android:layout_height="33.0dip">
+                    <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/icon_fankui" android:layout_centerInParent="true" />
+                    <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center" android:background="@drawable/shape_order_tip" android:padding="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="反馈中心" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/color_cccccc" android:ellipsize="end" android:layout_gravity="center_horizontal" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="辅助信息" android:maxLines="1" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout android:background="@drawable/circle_radius_ffffff_tras" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/rl_title5" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:background="@android:color/transparent" android:paddingLeft="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="金融服务" />
+            <LinearLayout android:orientation="vertical"  android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_alignParentRight="true">
+                <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:layout_gravity="center_horizontal" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_more" android:drawableRight="@drawable/icon_arrow_right_gray" android:drawablePadding="6.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/rl_title5">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_yaoqh" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="40.0dip" android:layout_height="33.0dip">
+                    <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/icon_yaoqing" android:layout_centerInParent="true" />
+                    <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center" android:padding="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="摇钱花" android:layout_below="@id/rl_shop_cart" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/color_cccccc" android:ellipsize="end" android:layout_gravity="center_horizontal" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="100%中奖" android:maxLines="1" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_bby" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="40.0dip" android:layout_height="33.0dip">
+                    <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/icon_bubuying" android:layout_centerInParent="true" />
+                    <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center" android:background="@drawable/shape_order_tip" android:padding="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="步步盈" android:layout_below="@id/rl_need_pay" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/color_cccccc" android:ellipsize="end" android:layout_gravity="center_horizontal" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="辅助信息" android:maxLines="1" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_jfjd" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="40.0dip" android:layout_height="33.0dip">
+                    <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/icon_jiedai" android:layout_centerInParent="true" />
+                    <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center" android:background="@drawable/shape_order_tip" android:padding="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="玖富借贷" android:layout_below="@id/rl_ongoing" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/color_cccccc" android:ellipsize="end" android:layout_gravity="center_horizontal" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="辅助信息" android:maxLines="1" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_360jd" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="40.0dip" android:layout_height="33.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_jietiao" android:layout_centerInParent="true" />
+                    <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center" android:background="@drawable/shape_order_tip" android:padding="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="360借条" android:layout_below="@id/rl_finish" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/color_cccccc" android:ellipsize="end" android:layout_gravity="center_horizontal" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="辅助信息" android:maxLines="1" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_yqh" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="40.0dip" android:layout_height="33.0dip">
+                    <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/icon_youqian" android:layout_centerInParent="true" />
+                    <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center" android:background="@drawable/shape_order_tip" android:padding="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="有钱花" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/color_cccccc" android:ellipsize="end" android:layout_gravity="center_horizontal" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="辅助信息" android:maxLines="1" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="66.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="76.0dip" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="#ff6b3d00" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vip_memeber_center" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff6b3d00" android:ellipsize="end" android:id="@+id/tv_memeberinfo_exp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:singleLine="true" android:text="经验值40"/>
+    </LinearLayout>
+    <View android:background="#ffe2b162" android:layout_width="1.0dip" android:layout_height="36.0dip" android:layout_marginLeft="2.0dip" />
+    <com.google.gooddoctor.view.JKViewFlipper android:id="@+id/vf" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="10.0dip" android:inAnimation="@anim/anim_from_bottom_in" android:outAnimation="@anim/anim_from_top_out" android:flipInterval="5000" android:autoStart="true" />
+</LinearLayout>

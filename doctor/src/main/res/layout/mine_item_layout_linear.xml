@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/mine_adapter_layout" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@+id/rl_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="5.0dip">
+        <ImageView android:id="@+id/mine_item_icon" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginTop="5.0dip" android:layout_centerInParent="true" android:contentDescription="@null" />
+        <View android:id="@+id/ci_tips" android:background="@drawable/shape_msg_count" android:visibility="gone" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/color_666666" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@+id/mine_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/advertist_tip" android:maxLines="1" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/color_cccccc" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@+id/mine_item_subname" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="@string/advertist_tip" android:maxLines="1" />
+</LinearLayout>

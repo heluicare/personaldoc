@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/main_layout" android:background="@color/main_default_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/layoutFootBar" android:background="#ffffffff" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="-10.0dip" android:layout_weight="1.0">
+                <RelativeLayout android:id="@+id/layoutTab1" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:textSize="10.0sp" android:textColor="@color/main_tab_text_press_medical" android:gravity="center" android:id="@+id/textTab1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.5dip" android:text="@string/main_medical_online" android:drawableTop="@drawable/main_zxkb_press" android:drawablePadding="1.0dip" android:layout_alignParentBottom="true" android:layout_centerInParent="true" />
+                    <ImageView android:id="@+id/footTips1" android:background="@drawable/shape_circle_tips" android:visibility="gone" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginLeft="-4.0dip" android:layout_marginTop="-1.0dip" android:layout_toRightOf="@id/textTab1" android:layout_alignTop="@id/textTab1" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/layoutTab2" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:textSize="10.0sp" android:textColor="@color/main_tab_text_normal" android:gravity="center" android:id="@+id/textTab2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.5dip" android:text="@string/main_medical_hospital" android:drawableTop="@drawable/main_quyiyuan_normal" android:drawablePadding="1.0dip" android:layout_alignParentBottom="true" android:layout_centerInParent="true" />
+                    <ImageView android:id="@+id/footTips2" android:visibility="gone" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginLeft="-4.0dip" android:layout_marginTop="-1.0dip" android:src="@drawable/shape_circle_tips" android:layout_toRightOf="@id/textTab2" android:layout_alignTop="@id/textTab2" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/layoutTab4" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:textSize="10.0sp" android:textColor="@color/main_tab_text_normal" android:gravity="center" android:id="@+id/textTab4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.5dip" android:text="@string/main_mine" android:drawableTop="@drawable/main_mine_normal" android:drawablePadding="1.0dip" android:layout_alignParentBottom="true" android:layout_centerInParent="true" />
+                    <ImageView android:id="@+id/footTips4" android:background="@drawable/shape_circle_tips" android:visibility="gone" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginLeft="-4.0dip" android:layout_marginTop="-1.0dip" android:layout_toRightOf="@id/textTab4" android:layout_alignTop="@id/textTab4" />
+                </RelativeLayout>
+            </LinearLayout>
+            <ImageView android:id="@+id/tabBottom" android:layout_width="fill_parent" android:layout_height="3.0dip" android:scaleType="fitXY" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.google.gooddoctor.view.NoSwipeViewPager android:id="@+id/vp_home" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/layoutFootBar" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/fl_rym" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/layoutFootBar" />
+    <View android:background="@drawable/main_foot_bg_top" android:layout_width="fill_parent" android:layout_height="13.0dip" android:layout_above="@id/layoutFootBar" />
+    <com.google.gooddoctor.view.ActivityTopBar android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layoutTopBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <com.google.gooddoctor.view.HealthSearchView android:id="@+id/hsv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layoutTopBar" />
+</RelativeLayout>
